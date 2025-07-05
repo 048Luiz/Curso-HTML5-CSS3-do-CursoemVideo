@@ -1,11 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@charset "UTF-8";
 
 @font-face {
-  font-family: "Passion one";
+  font-family: Passion one;
   src: url(Fontes/Passion_One/PassionOne-Regular.ttf);
 }
 
@@ -14,85 +10,95 @@
   src: url(Fontes/Sriracha/Sriracha-Regular.ttf);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+html body {
+  min-height: 100vh;
+  background-color: darkgray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
   background-color: black;
   color: whitesmoke;
+  text-align: center;
 }
 
-header h1 {
+header > h1 {
+  padding-top: 50px;
+  font-variant: small-caps;
   font-family: Passion one;
-  font-size: 5em;
+  font-size: 10vw;
 }
 
-header p {
-  font-family: sans-serif;
-  margin: 10px;
+header > p {
+  padding-bottom: 50px;
 }
 
-.container p {
+header a,
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+header a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 30px;
   font-family: Sriracha;
-  font-size: 1.6em;
-  margin: 30px;
-  padding: 20px;
-  text-align: justify;
+  font-size: 4vw;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
+section > p {
+    padding-bottom: 2em;
 }
 
-#img1 {
-  display: flex;
-  align-items: center;
-  height: 500px;
-  background-image: url(pacote-d012/imagens/background001.jpg);
-  background-position: center center;
-  background-size: cover;
+.normal {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.imagem {
+  background-color: black;
   color: whitesmoke;
-  background-attachment: fixed;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.500);
 }
 
-#img1 p {
-  background-color: rgba(0, 0, 0, 0.500);
-  width: 300px;
+.imagem > p {
+  display: inline-block;
   padding: 10px;
-  text-shadow: 0px 2px black;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 0px black;
 }
 
-#img2 {
-  display: flex;
-  align-items: center;
-  height: 500px;
-  background-image: url(pacote-d012/imagens/background002.jpg);
-  background-position: center center;
-  background-size: cover;
-  color: whitesmoke;
-  background-attachment: fixed;
+#img01 {
+    background-image: url(pacote-d012/imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-#img2 p {
-  background-color: rgba(0, 0, 0, 0.500);
-  width: 300px;
-  padding: 10px;
-  text-shadow: 0px 2px black;
+#img02 {
+    background-image: url(pacote-d012/imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: black;
-  height: 40px;
-  padding: 10px;
-}
-
-footer p {
-  font-family: sans-serif;
+  text-align: center;
   color: whitesmoke;
+  padding: 10px;
 }
