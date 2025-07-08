@@ -17,18 +17,17 @@
         align-items: center;
         font-family: Arial, Helvetica, sans-serif;
         width: 100vw;
-        padding: 20px;
       }
 
       h1 {
-        background-color: gray;
+        background-color: goldenrod;
         border-top: 1px solid black;
         border-right: 1px solid black;
         border-left: 1px solid black;
         margin-top: 5px;
         color: whitesmoke;
         font-size: 1.5em;
-        padding: 10px;
+        padding-top: 10px;
         text-align: center;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
       }
@@ -36,12 +35,11 @@
       table,
       h1 {
         max-width: 90%;
-        width: 700px;
+        width: 600px;
       }
 
       table {
         border-collapse: collapse;
-        text-align: center;
       }
 
       td,
@@ -50,11 +48,26 @@
         padding: 5px;
       }
 
+      tbody > tr:nth-child(even) {
+        background-color: lightgray;
+      }
+
       thead,
       tfoot {
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        background-color: gray;
+        background-color: goldenrod;
         color: whitesmoke;
+      }
+
+      caption {
+        font-size: 1.2em;
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: whitesmoke;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        background-color: goldenrod;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
       }
     </style>
   </head>
@@ -62,6 +75,7 @@
     <h1>Tabelas Grandes</h1>
     <!--Anatomia para tabelas grandes
     table
+    caption (legenda da tabela)
     thead
         tr, td, th
     tbody
@@ -73,8 +87,8 @@
     <table>
       <thead>
         <tr>
-          <th>Estado</th>
-          <th>População</th>
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 150px">População</th>
         </tr>
       </thead>
       <tbody>
@@ -189,10 +203,13 @@
       </tbody>
       <tfoot>
         <tr>
-          <th>Total de Habitantes</th>
+          <th scope="row">Total de Habitantes</th>
           <td><strong>212 583 750</strong></td>
         </tr>
       </tfoot>
+      <caption>
+        População das Unidades Federativas
+      </caption>
     </table>
   </body>
 </html>
