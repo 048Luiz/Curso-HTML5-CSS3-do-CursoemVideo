@@ -4,19 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estudando Iframes</title>
+    <style>
+      iframe {
+        height: 300px;
+        width: 300px;
+        margin: 10px;
+      }
+    </style>
   </head>
   <body>
     <h1>Testando Iframes</h1>
     <p>
+      <!--Tamanho padrão do Iframe é de 300 x 150 px-->
       Acessando o site do
-      <iframe src="https://www.cursoemvideo.com" frameborder="300"> </iframe>
+      <iframe src="https://www.cursoemvideo.com" frameborder="1"
+        ><a href="https://www.cursoemvideo.com" target="_blank"></a>
+      </iframe>
       para aprender a programar.
     </p>
     <p>
-      veja também o site do
-      <iframe src="https://www.google.com.br" frameborder="0"></iframe>
-
-      para pesquisar
+      O repósitorio do Guanabara
+      <iframe src="https://gustavoguanabara.github.io" frameborder="1"
+        ><a href="https://gustavoguanabara.github.io" target="_blank"></a
+      ></iframe>
+      também pode ser interessante.
     </p>
   </body>
 </html>
