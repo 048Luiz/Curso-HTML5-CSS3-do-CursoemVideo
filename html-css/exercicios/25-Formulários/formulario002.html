@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
+      <p>
+        <label for="iUser">Usuário</label>
+        <br />
+        <input
+          type="text"
+          name="user"
+          id="iUser"
+          required
+          minlength="8"
+          maxlength="20"
+          autocomplete="username"
+          placeholder="Digite seu Usuário"
+        />
+      </p>
+      <p>
+        <label for="iPass">Senha</label>
+        <br />
+        <input
+          type="password"
+          name="pass"
+          id="iPass"
+          required
+          minlength="8"
+          maxlength="20"
+          autocomplete="current-password"
+          placeholder="Digite sua senha"
+        />
+      </p>
+      <p>
+        <input type="submit" value="Entrar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
