@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.js">
+      <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="iMasc" value="Masculino" />
+        <label for="iMasc">Masculino</label>
+        <br />
+        <input type="radio" name="sexo" id="iFemin" value="Feminino" />
+        <label for="iFemin">Feminino</label>
+      </fieldset>
+      <fieldset>
+        <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="futebol" id="iFutebol" />
+        <label for="iFutebol">Futebol</label> <br />
+        <input type="checkbox" name="volei" id="iVolei" />
+        <label for="iVolei">Volei</label> <br />
+        <input type="checkbox" name="basquete" id="iBasquete" />
+        <label for="iBasquete">Basquete</label> <br />
+        <input type="checkbox" name="skate" id="iSkate" />
+        <label for="iSkate">Skate</label> <br />
+      </fieldset>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>

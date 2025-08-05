@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.js" method="get">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+          <label for="iName">Nome:</label>
+          <input
+            type="text"
+            name="name"
+            id="iName"
+            minlength="5"
+            maxlength="30"
+            autocomplete="name"
+            required
+          />
+        </p>
+        <p>
+          <label for="iEmail">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="iEmail"
+            autocomplete="email"
+            required
+          />
+        </p>
+        <p>
+          <label for="iPhone">Telefone:</label>
+          <input
+            type="tel"
+            name="phone"
+            id="iPhone"
+            autocomplete="tel"
+            required
+          />
+        </p>
+        <p>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpar" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
