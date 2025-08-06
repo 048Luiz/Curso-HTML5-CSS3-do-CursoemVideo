@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.js" method="post">
+      <p>
+        <label for="iEstado">Estado:</label>
+        <select name="estado" id="iEstado">
+          <option value="" selected>---Escolha---</option>
+          <optgroup label="Sudeste">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+          </optgroup>
+
+          <optgroup label="Sul">
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande Do Sul</option>
+          </optgroup>
+        </select>
+      </p>
+
+      <p>
+        <label for="iProf">Profissão</label>
+        <input type="text" name="prof" id="iProf" list="List" />
+        <datalist id="List">
+          <option>Administrador</option>
+          <option>Advogado</option>
+          <option>Secretário</option>
+        </datalist>
+      </p>
+
+      <p>
+        <label for="iMensg">Mensagem:</label>
+        <textarea name="mensg" id="iMensg" cols="30" rows="10"></textarea>
+      </p>
+
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
