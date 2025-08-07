@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <h1>Teste de Formulários</h1>
+    <form action="cadastro.js">
+      <p>
+        <label for="iNumber">Número:</label>
+        <input
+          type="range"
+          name="number"
+          id="iNumber"
+          min="0"
+          max="10"
+          oninput="iExit.innerHTML = Number(iNumber.value)"
+        />
+        <output name="exit" id="iExit">0</output>
+      </p>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
